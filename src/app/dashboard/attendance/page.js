@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Webcam from 'react-webcam';
+import Image from 'next/image';
 
 function Attendance() {
   const [capture, setCapture] = useState(null);
@@ -57,7 +58,7 @@ function Attendance() {
         {capture && (
           <div className="mt-4">
             <h3 className="text-lg font-semibold mb-2">Captured Photo:</h3>
-            <img src={capture} alt="Captured" className="rounded-lg border" />
+            <Image src={capture} alt="Captured" className="rounded-lg border" />
           </div>
         )}
       </div>

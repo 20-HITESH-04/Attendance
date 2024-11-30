@@ -5,7 +5,7 @@ import Card from './_components/Card'
 import BarChartComponent from './_components/BarChartComponent';
 import PieChartComponent from './_components/PieChartComponent';
 
-function dashboard() {
+function Dashboard() {
   const { setTheme } = useTheme() ;
   useEffect(()=>{
     setTheme('system') ;
@@ -47,4 +47,4 @@ function dashboard() {
   )
 }
 
-export default dashboard
+export default Dashboard
